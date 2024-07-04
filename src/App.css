@@ -9,7 +9,7 @@ body {
   /* background-color: red; */
 }
 
-/* App-js style  */
+/* App-js style */
 .app--container {
   border-radius: 0; /* Remove border radius for full page coverage */
   margin: 0; /* Remove margin */
@@ -20,7 +20,6 @@ body {
   background-color: rgba(138, 174, 225, 0.814);
   box-sizing: border-box; /* Ensure padding and border are included in width and height */
 }
-
 
 .app--container--two {
   border-radius: 10px;
@@ -39,8 +38,7 @@ body {
   height: 280px;
 }
 
-
-/* main-js style  */
+/* main-js style */
 .main--heading {
   font-size: 27px;
   text-align: center;
@@ -79,7 +77,12 @@ body {
   border: none;
   outline: none;
   align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
 
+.main--btn:hover {
+  transform: scale(1.05); /* Slightly enlarge button on hover */
 }
 
 .btn--email {
@@ -92,6 +95,10 @@ body {
   text-decoration: none;
 }
 
+.btn--email:hover {
+  background-color: #ddd; /* Change background color on hover */
+}
+
 .btn--linkedin {
   background-color: rgb(35, 145, 255);
   color: white;
@@ -100,6 +107,10 @@ body {
   margin-right: 22px;
   padding: 5px 12px;
   text-decoration: none;
+}
+
+.btn--linkedin:hover {
+  background-color: rgb(15, 125, 235); /* Change background color on hover */
 }
 
 .email {
@@ -139,28 +150,31 @@ body {
   margin-top: 4px;
 }
 
-
 /* Footer-js styling */
-
-.footer--container{
+.footer--container {
   width: 317px;
   height: 68px;
   background-color: #DC5F00;
   padding: 3px;
   align-items: center;
-  vertical-align:middle ;
+  vertical-align: middle;
   border-bottom-left-radius: 9px;
   border-bottom-right-radius: 9px;
 }
 
-.footer--image{
+.footer--image {
   height: 30px;
   filter: brightness(2);
-  margin:10px;
-  border-radius: 4px;
+  margin: 10px;
+  border-radius: 12px;
+  transition: transform 0.3s, filter 0.3s; /* Smooth transition for hover effect */
 }
 
-.footer--items{
+.footer--image:hover {
+  transform: scale(1.1); /* Slightly enlarge image on hover */
+  filter: brightness(1.5); /* Adjust brightness on hover */
+}
+
+.footer--items {
   margin: 2px 55px;
-  
 }
