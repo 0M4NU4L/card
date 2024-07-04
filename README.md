@@ -8,8 +8,8 @@ This repository is deployed on [https://vercel.com]
 
 ## Local development
 
-'npm card'
+npm card
 
-'npm run build'
+npm run build
 
-'npm start'
+npm start
